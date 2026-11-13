@@ -9,6 +9,10 @@ Tool parts that I chose: Part 3: Robot Framework and Part 4: Cypress
 - Step 0.4, locator of Excluded tools: `select`
 - Step 0.4, locator of Must be vegetarian: `input#default-checkbox`
 - Step 0.4, locator of Custom Pizza Name: `input#pizza-name`
+- Step 0.4, Duplicate ID verification after clicking "Pizza, Please!":
+  - `$$('#pizza-name').length` → 2 elements
+  - `$$('input#pizza-name').length` → 1 element
+  - Explanation: The ID `pizza-name` is used by two elements after generating a pizza. Using `input#pizza-name` selects only the input field and avoids ambiguity.
 - Step 0.5, pizza name, tool and calories of the run by hand:
 
 | Step | Actual result | Pass or fail |
