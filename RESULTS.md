@@ -37,13 +37,14 @@ Tool parts that I chose: Part 3: Robot Framework and Part 4: Cypress
 - Step 3.8, run 2, result, elapsed time and pizza name: PASS (1 test, 1 passed, 0 failed), 10.058 s, Lab Pizza 20261113-143838
 
 ## Part 4: Cypress
-- node --version, npm --version and npx cypress version:
-- Step 4.3, failure message for the wrong title:
-- Step 4.6, tool and calories in the answer of POST /api/pizza:
-- Step 4.7, the line of the admin list that shows your pizza:
-- Step 4.8, run 1, result, duration and pizza name:
-- Step 4.8, run 2, result, duration and pizza name:
-- Step 4.9 (optional), browser and result:
+
+- node --version, npm --version and npx cypress version: Node.js v26.13.1, npm 11.20.0, Cypress 16.2.1.
+- Step 4.3, failure message for the wrong title: `Timed out retrying after 10000ms` — Expected `Wrong title`, but the actual page title was `Web form`. (Intentional failure; the correct title was restored and the test passed.)
+- Step 4.6, tool and calories in the answer of POST /api/pizza: Tool = Pizza cutter, Calories per slice = 550.
+- Step 4.7, the line of the admin list that shows your pizza: `Lab Pizza 20261113-163108 (tool=Pizza cutter, ingredients_number=6)`
+- Step 4.8, run 1, result, duration and pizza name: PASS (2 passed, 0 failed), 00:18, Lab Pizza 20261113-163108.
+- Step 4.8, run 2, result, duration and pizza name: PASS (2 passed, 0 failed), 00:19, Lab Pizza 20261113-164119.
+- Step 4.9 (optional), browser and result: Not performed (optional).
 
 ## Part B
 1.
