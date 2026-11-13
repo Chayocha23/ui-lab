@@ -31,10 +31,10 @@ Tool parts that I chose: Part 3: Robot Framework and Part 4: Cypress
 
 
 ## Part 3: Robot Framework
-- robot --version:
-- Step 3.2, failure message for the wrong title:
-- Step 3.8, run 1, result, elapsed time and pizza name:
-- Step 3.8, run 2, result, elapsed time and pizza name:
+- robot --version: Robot Framework 7.5.1 (Python 3.13.17 on win32)
+- Step 3.2, failure message for the wrong title: Title should have been 'Web Form' but was 'Web form'.
+- Step 3.8, run 1, result, elapsed time and pizza name: PASS (1 test, 1 passed, 0 failed), 9.963 s, Lab Pizza 20261113-143508
+- Step 3.8, run 2, result, elapsed time and pizza name: PASS (1 test, 1 passed, 0 failed), 10.058 s, Lab Pizza 20261113-143838
 
 ## Part 4: Cypress
 - node --version, npm --version and npx cypress version:
