@@ -8,3 +8,4 @@ cypress/cypress/downloads/
 .DS_Store
 .idea/
 .vscode/
+robot/.venv/
