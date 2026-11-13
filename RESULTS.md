@@ -13,17 +13,22 @@ Tool parts that I chose: Part 3: Robot Framework and Part 4: Cypress
   - `$$('#pizza-name').length` → 2 elements
   - `$$('input#pizza-name').length` → 1 element
   - Explanation: The ID `pizza-name` is used by two elements after generating a pizza. Using `input#pizza-name` selects only the input field and avoids ambiguity.
+
 - Step 0.5, pizza name, tool and calories of the run by hand:
+  - Pizza name: Lab Pizza 20261113-123500
+  - Tool: Pizza cutter
+  - Calories per slice: 450
 
 | Step | Actual result | Pass or fail |
 |------|---------------|--------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-| 6 | | |
-| 7 | | |
+| 1 | QuickPizza home page opened. The heading "Looking to break out of your pizza routine?" was displayed. | PASS |
+| 2 | Advanced mode was enabled. Max Calories per Slice, Excluded tools, Must be vegetarian, and Custom Pizza Name appeared. | PASS |
+| 3 | Entered 600 calories, excluded Knife, checked Must be vegetarian, and entered Lab Pizza 20261113-123500. All values were displayed correctly. | PASS |
+| 4 | The recommendation displayed Lab Pizza 20261113-123500, tool Pizza cutter, and 450 calories per slice. Knife was not used and calories were within the limit. | PASS |
+| 5 | Clicked Love it! without logging in. The message "Please log in first." appeared. | PASS |
+| 6 | Opened /admin and signed in using admin credentials. The "Latest pizza recommendations" list appeared. | PASS |
+| 7 | Found Lab Pizza 20261113-123500 in the admin list with tool=Pizza cutter and ingredients_number=7, matching the latest recommendation in Step 4. | PASS |
+
 
 ## Part 3: Robot Framework
 - robot --version:
