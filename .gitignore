@@ -9,3 +9,9 @@ cypress/cypress/downloads/
 .idea/
 .vscode/
 robot/.venv/
+
+# Robot Framework generated results
+robot/log.html
+robot/report.html
+robot/output.xml
+robot/selenium-screenshot-*.png
